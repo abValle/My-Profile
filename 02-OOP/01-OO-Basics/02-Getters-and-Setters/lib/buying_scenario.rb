@@ -1,13 +1,15 @@
 require_relative "vending_machine"
+require 'pry-byebug'
 
 def display(vending_machine)
   return "---> Amount: #{vending_machine.user_balance_cents / 100.0}€" \
-    " - 1 Snack = #{vending_machine.snack_price_cents / 100.0}€" \
-    " - Stock: #{vending_machine.snack_count}"
+         " - 1 Snack = #{vending_machine.snack_price_cents / 100.0}€" \
+         " - Stock: #{vending_machine.snack_count}"
 end
 
 # We instantiate a new vending machine selling 2.5 euros snacks. In the beginning
 # this machine has a stock of 10 snacks.
+
 vending_machine = VendingMachine.new(250, 10)
 puts "Vending machine ready!"
 puts display(vending_machine)
