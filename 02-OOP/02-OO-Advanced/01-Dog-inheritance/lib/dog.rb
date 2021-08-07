@@ -4,5 +4,9 @@ class Dog
   end
 end
 
-class GermanShepherd
+class GermanShepherd < Dog
 end
+
+
+jack = GermanShepherd.new
+jack.bark
