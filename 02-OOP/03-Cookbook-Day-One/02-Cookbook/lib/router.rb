@@ -1,7 +1,7 @@
 class Router
   def initialize(controller)
     @controller = controller
-    @running    = true
+    @running = true
   end
 
   def run
