@@ -1,3 +1,4 @@
+# MODEL
 class Recipe
   attr_reader :name, :description
 
