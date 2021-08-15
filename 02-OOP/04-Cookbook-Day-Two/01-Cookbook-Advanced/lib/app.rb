@@ -1,3 +1,4 @@
+# PARA IMPRIMIR COLORIDO
 require 'colored'
 require 'nokogiri'
 require 'open-uri'
