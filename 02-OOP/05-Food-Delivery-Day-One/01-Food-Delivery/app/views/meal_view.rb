@@ -2,7 +2,7 @@ require 'colored'
 
 class MealView
   def ask_for_meals_name
-    puts "Which meal to do you want to add?"
+    puts "Which meal do you want to add?"
     print ">"
     gets.chomp
   end
