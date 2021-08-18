@@ -2,8 +2,15 @@
 # Then you can test your program with:
 #   ruby app.rb
 require_relative 'app/models/meal'
+require_relative 'app/repositories/meal_repository'
+require_relative 'app/controllers/meals_controller'
 require 'colored'
+require 'csv'
 
-meal1 = Meal.new(name: "X-burguer", id: 1, price: 25.5)
+meal_repository = MealRepository.new('data/meals.csv')
+meals_controller = MealsController.new(meal_repository)
 
-p meal1
+meals_controller.add
+meals_controller.add
+
+meals_controller.list
