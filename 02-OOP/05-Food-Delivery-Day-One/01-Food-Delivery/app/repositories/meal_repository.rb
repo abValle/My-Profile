@@ -23,14 +23,16 @@ class MealRepository
 
   def find(id)
     # ITERA SOBRE OS OBJETOS DA ARRAY E SELECIONA O OBJETO QUE POSSUE O .ID == ID
+    # O METODO SELECT SEMPRE RETORNA UM ARRAY, COM FIRST E' RETIRADO O OBJETO DA ARRAY
     @meals.select { |meal| meal.id == id }.first
   end
 
   private
 
   def save_csv
+    # 'wb' WRITE BINARY - ARQUIVO DE ESCRITA
     CSV.open(@csv_file, 'wb', CSV_OPTIONS) do |file|
-      # PASSANDO O HEADER
+      # PASSANDO O HEADER. %i -> ARRAY DE SYMBOL
       file << %i[id name price]
       @meals.each do |meal|
         file << [meal.id, meal.name, meal.price]
