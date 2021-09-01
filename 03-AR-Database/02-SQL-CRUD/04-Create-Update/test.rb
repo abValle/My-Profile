@@ -13,5 +13,7 @@ create_statement = "
       `votes`  INTEGER
     );"
 DB.execute(create_statement)
+DB.execute("INSERT INTO posts (title, url, votes) VALUES ('Le Wagon', 'lewagon.com', '5')")
+DB.execute("INSERT INTO posts (title, url, votes) VALUES ('Stackoverflow', 'stackoverflow.com', '5')")
 
 # Write your test code here (and run `ruby test.rb` in your terminal to run it):
