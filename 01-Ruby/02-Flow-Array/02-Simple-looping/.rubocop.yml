@@ -1,5 +1,0 @@
-inherit_from:
-  - ../../../.rubocop.yml
-
-For:
-  Enabled: false
