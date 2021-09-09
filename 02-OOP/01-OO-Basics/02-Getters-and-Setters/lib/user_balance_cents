@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/vallan/code/abValle/fullstack-challenges/02-OOP/01-OO-Basics/02-Getters-and-Setters/lib/buying_scenario.rb:18 :
+
+    [1;34m13[0m: puts [31m[1;31m"[0m[31mVending machine ready![1;31m"[0m[31m[0m
+    [1;34m14[0m: puts display(vending_machine)
+    [1;34m15[0m: 
+    [1;34m16[0m: binding.pry
+    [1;34m17[0m: [1;34m# A client comes and inserts some coins[0m
+ => [1;34m18[0m: puts [31m[1;31m"[0m[31mInserting 2€[1;31m"[0m[31m[0m
+    [1;34m19[0m: vending_machine.insert_coin([1;34m200[0m)
+    [1;34m20[0m: puts display(vending_machine)
+    [1;34m21[0m: 
+    [1;34m22[0m: [1;34m3[0m.times [32mdo[0m
+    [1;34m23[0m:   puts [31m[1;31m"[0m[31mInserting 0.2€[1;31m"[0m[31m[0m
+

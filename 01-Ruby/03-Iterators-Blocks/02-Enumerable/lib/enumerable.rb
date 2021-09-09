@@ -1,0 +1,59 @@
+def sum_odd_indexed(array)
+  # TODO: computes the sum of elements at odd indexes (1, 3, 5, 7, etc.)
+  #       You should use Enumerable#each_with_index
+  odd_array = []
+  array.each_with_index do |num, index|
+    odd_array << num if index.odd?
+  end
+  return odd_array.sum
+end
+
+def even_numbers(array)
+  # TODO: Return the even numbers from a list of integers.
+  #       You should use Enumerable#select
+  only_even = array.select do |even|
+    even.even?
+  end
+  return only_even
+end
+
+def short_words(array, max_length)
+  # TODO: Take an array of words, return the array of words not exceeding max_length characters
+  #       You should use Enumerable#reject
+  ok_words = array.reject do |word|
+    word.length > max_length
+  end
+  return ok_words
+end
+
+def first_under(array, limit)
+  # TODO: Return the first number from an array that is less than limit.
+  #       You should use Enumerable#find
+  numero = array.find do |num|
+    num < limit
+  end
+  return numero
+end
+
+def add_bang(array)
+  # TODO: Take an array of strings and return a new array with "!" appended to each string.
+  #       You should use Enumerable#map
+  new_array = array.map do |stg|
+    "#{stg}!"
+  end
+  return new_array
+end
+
+def concatenate(array)
+  # TODO: Concatenate all strings given in the array.
+  #       You should use of Enumerable#reduce
+  return array.reduce(:+)
+end
+
+def sorted_pairs(array)
+  # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
+  #       You should use of Enumerable#each_slice
+  new_array = array.each_slice(2).map(&:sort).to_a
+
+  return new_array
+end
