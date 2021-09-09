@@ -31,7 +31,7 @@ h1 {
 }
 
 @media (max-width: 1366px) {
-  /* For a screen < 1366px, this CSS will be read, ok*/
+  /* For a screen < 1366px, this CSS will be read*/
   .container {
     width: 700px;
     margin: 0 auto;
